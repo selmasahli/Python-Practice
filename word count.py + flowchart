@@ -1,0 +1,29 @@
+def get_words_list(string):
+    word_list = string.split()
+    return word_list
+
+def get_counts(word_list):
+    word_counts = dict()
+    
+    for word in word_list:
+        if not word in word_counts:
+            #equal it to 1
+            word_counts[word] = 1
+            #if else statement 
+        else:
+                word_counts[word] += 1
+    return word_counts
+
+Get_words_list FLOWCHART!!
+1)input: String
+2)String split 
+3)Output Word list 
+
+Get_counts FLOWCHART!!
+1)Input word_list 
+2) initialize an empty dictionary for this file (word counts)
+3)Loop through each word in the file 
+4) If word is in the dictionary ---> Add word to dictionary with count 1
+4) If word is not in the dictionary ---> Add count of existing word in dictionary with no count
+1)Output word count dictionary
+END
